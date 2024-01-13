@@ -52,10 +52,6 @@ public class C01 extends TestBase {
 
         Files.write(Paths.get(dosyaYolu) , sonucYazisi.getScreenshotAs(OutputType.BYTES) );
 
-        /*
-        Bir webelementin ekran görüntüsü nasil alinir?
-        Selenium 4 itibari ile artik biz bir webelementin ekran gorunutusun  getScreenshotAs methodu sayesinde  alabiliyoruz
-         */
 
     }
 
