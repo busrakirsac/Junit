@@ -136,5 +136,23 @@ public abstract class TestBase {
     }
 
 
+    public void rapor(String browser, String reportName){
+
+        extentReports = new ExtentReports();
+
+        String date = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss").format(LocalDateTime.now());
+        String path = "target/extentReport/" + date + "htmlReport.html";
+        extentHtmlReporter = new ExtentHtmlReporter(path);
+
+        extentReports.attachReporter(extentHtmlReporter);
+
+        extentHtmlReporter.config().setDocumentTitle("X");
+
+        extentHtmlReporter.config().setReportName(reportName);
+
+        extentReports.setSystemInfo("Enviroment", "QA");
+        extentReports.setSystemInfo("Browser", browser);
+        extentReports.setSystemInfo("Test Automation Engineer", "Ayse");
+    }
 
 }
