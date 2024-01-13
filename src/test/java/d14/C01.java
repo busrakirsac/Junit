@@ -34,7 +34,6 @@ public class C01 extends TestBase {
     }
 
 
-
     @Test
     public void test05() throws InterruptedException {
         //- ebay sayfasına gidiniz
@@ -57,4 +56,5 @@ public class C01 extends TestBase {
             driver.navigate().back();
             Thread.sleep(2000);
         }
+    }
 }
