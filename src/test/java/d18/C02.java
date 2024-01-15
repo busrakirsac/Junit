@@ -56,10 +56,10 @@ public class C02 extends TestBase {
         //arama kutus id attribute degerini ismimiz ile degistirelim
         WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].setAttribute('id','mehmet')",searchBox);
+        js.executeScript("arguments[0].setAttribute('id','busra')",searchBox);
 
         //degistirmis oldugumuz id ile arama kutusunu locate ederek java aratalim
-        driver.findElement(By.id("mehmet")).sendKeys("java");
+        driver.findElement(By.id("busra")).sendKeys("java");
 
     }
 
